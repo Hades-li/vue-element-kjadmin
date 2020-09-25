@@ -1,0 +1,136 @@
+.tag-bar {
+  display: flex;
+  height: 40px;
+  background-color: $--color-primary;
+  .arrow {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+    height: 100%;
+    &:hover {
+      background-color: $--color-primary-light-1;
+    }
+    color: $--color-white;
+    i {
+      font-size: 20px;
+    }
+    &.left {
+      i:last-child {
+        margin-left: -14px;
+      }
+    }
+    &.right {
+      i:first-child {
+        margin-right: -14px;
+      }
+    }
+  }
+  .more {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+    height: 100%;
+    color: $--color-white;
+    font-size: 20px;
+    &:hover {
+      background-color: $--color-primary-light-1;
+    }
+  }
+}
+
+.drag-wrap {
+  margin: 0;
+  padding: 0 0 0 10px;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  height: 40px;
+  overflow: hidden;
+  width: calc(100% - 120px);
+  li {
+    flex-shrink: 0;
+    position: relative;
+    margin: 0 10px;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #72a0fe;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    &:before {
+      content: '';
+      position: absolute;
+      left:-20px;
+      top: 0;
+      width: 20px;
+      height: 30px;
+      background: url(~@/assets/imgs/tag.png) 0 0 no-repeat;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: 0;
+      width: 20px;
+      height: 30px;
+      background: url(~@/assets/imgs/tag.png) -65px 0 no-repeat;
+    }
+    &.active {
+      color: $--color-text-primary;
+      font-weight: 700;
+      background-color: $--background-color-base;
+      z-index: 100;
+      &:before {
+        background: url(~@/assets/imgs/tag_act.png) 0 0 no-repeat;
+      }
+      &:after {
+        background: url(~@/assets/imgs/tag_act.png) -41px 0 no-repeat;
+      }
+    }
+    .el-icon-close {
+      font-size: 14px;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      border-radius: $--border-radius-circle;
+      &:hover {
+        color: $--color-white;
+        background-color: $--color-primary-light-1;
+      }
+    }
+  }
+}
+
+.contextMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  background-color: $--background-color-base;
+  list-style: none;
+  box-shadow: $--box-shadow-base;
+  border-radius: $--border-radius-base;
+  z-index: 200;
+  cursor: pointer;
+  li {
+    font-size: 14px;
+    padding: 10px 0;
+    width: 150px;
+    text-align: center;
+    &:hover {
+      color: #fff;
+      background-color: $--color-primary;
+    }
+  }
+}
+

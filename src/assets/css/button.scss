@@ -1,0 +1,25 @@
+.el-button {
+  &.el-button--small {
+
+  }
+  &.is-plain {
+    background-color: transparent;
+  }
+  &.is-plain:hover {
+    .svg-icon {
+      fill: $--color-white;
+    }
+  }
+  &.el-button--small.square {
+    padding: 5px;
+    i {
+      font-size: 20px;
+    }
+  }
+  &.el-button--small.rect {
+    padding: 5px 20px;
+    i {
+      font-size: 20px;
+    }
+  }
+}

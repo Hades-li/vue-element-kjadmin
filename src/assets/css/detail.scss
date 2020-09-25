@@ -1,0 +1,35 @@
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  h3 {
+    font-size: 18px;
+    margin: 0;
+    color: $--color-primary;
+  }
+}
+.form-title {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+.el-form-item {
+  .form-text {
+    margin: 0;
+    padding: 11px 0 ;
+    line-height: 18px;
+  }
+  &.el-form-item--small {
+    margin-bottom: 15px;
+    .form-text {
+      padding: 7px 0;
+    }
+  }
+}
+.detail .el-form-item {
+  margin-bottom: 0;
+}
+.card-tab {
+  margin-top: -15px;
+}
+

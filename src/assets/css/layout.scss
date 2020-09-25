@@ -1,0 +1,23 @@
+html {
+  height: 100%;
+  body {
+    height: 100%;
+    #app {
+      height: 100%;
+    }
+  }
+}
+.layout {
+  height: 100%;
+  display: flex;
+  .menu{
+    flex-shrink: 0;
+  }
+  .main-wrap {
+    width: calc(100% - 220px);
+    transition: width 300ms;
+    &.isCollapse {
+      width: 100%;
+    }
+  }
+}

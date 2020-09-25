@@ -1,0 +1,13 @@
+.s-table {
+  .stable-header {
+    th{
+      border-left: 1px solid #dbdbdb;
+      &:first-child {
+        border-left: 0 none;
+      }
+    }
+  }
+}
+.el-table--small {
+  font-size: 14px;
+}

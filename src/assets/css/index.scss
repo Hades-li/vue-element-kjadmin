@@ -1,0 +1,22 @@
+$--font-path: '../fonts' !default;
+@import "~element-ui/packages/theme-chalk/src/index";
+@import "./layout";
+@import "./menu";
+@import "./navbar";
+@import "./tagbar";
+@import "./common";
+@import "./transition";
+@import "./table";
+@import "./dialog";
+@import "./fileupload";
+@import "./tab.scss";
+@import "./button";
+@import "./detail";
+@import "./form";
+@import "./input";
+@import "./select";
+@import "./demo";
+
+html {
+  line-height: 1em;
+}

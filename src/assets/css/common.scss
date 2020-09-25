@@ -1,0 +1,32 @@
+$directions:("t":"top", "b":"bottom", "l":"left", "r":"right");
+$dimensions:("p":"padding", "m":"margin");
+//获取padding margin间隔
+@each $dim in $dimensions {
+  //循环四个方向
+  @each $dir in $directions {
+    @for $i from 1 through 10 {
+      $size: $i*5;
+      .#{nth($dim,1)}-#{nth($dir,1)}-#{$size} {
+        #{nth($dim,2)}-#{nth($dir,2)}: #{$size}px;
+      }
+    }
+  }
+}
+
+body {
+  background-color: $--background-color-base;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: blue;
+  overflow: hidden;
+}

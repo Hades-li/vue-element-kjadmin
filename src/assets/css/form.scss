@@ -1,0 +1,30 @@
+.text-hidden .el-form-item__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-indent: 1em;
+}
+
+.form-error {
+  display: inline-block;
+  position: absolute;
+  top: -27px;
+  left: 0;
+  color: #fff;
+  line-height: 22px;
+  padding: 0 10px;
+  background-color: $--color-danger;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: "element-icons" !important;
+  &:before {
+    content: "\e790";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: -13px;
+    margin-left: -5px;
+    color: $--color-danger;
+  }
+}

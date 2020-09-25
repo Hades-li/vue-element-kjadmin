@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="椭圆_5" data-name="椭圆 5" class="cls-1" d="M841,596.5A37.5,37.5,0,1,1,803.5,634,37.5,37.5,0,0,1,841,596.5Zm-0.021,16.236,18.749,20.015h-37.5ZM831,632.75h20V651.5H831V632.75Z" transform="translate(-803.5 -596.5)"/>
+</svg>
