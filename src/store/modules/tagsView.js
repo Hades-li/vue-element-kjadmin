@@ -1,9 +1,13 @@
 const state = {
   visitedViews: [],
-  cachedViews: []
+  cachedViews: [],
+  isReloading: true
 }
 
 const mutations = {
+  SET_IS_RELOADING: (state, bool) => {
+    state.isReloading = bool
+  },
   ADD_VISITED_VIEW: (state, view) => {
     if (state.visitedViews.some(v => v.path === view.path)) return
     state.visitedViews.push(

@@ -168,8 +168,10 @@ export default {
     },
     // 刷新当前页面
     refresh() {
-      const fullpath = this.$route.fullPath
-      this.$router.replace(`/redirect${fullpath}`)
+      this.$store.commit('tagsView/SET_IS_RELOADING', false)
+      this.$nextTick().then(() => {
+        this.$store.commit('tagsView/SET_IS_RELOADING', true)
+      })
     },
     // 右键菜单打开
     contextMenuOpen (tag, event) {

@@ -9,7 +9,7 @@
       mode="out-in"
     >
       <!--      <keep-alive>-->
-      <router-view />
+      <router-view v-if="isReloading" />
       <!--      </keep-alive>-->
     </transition>
   </el-scrollbar>
@@ -19,6 +19,9 @@
 export default {
   name: 'AppMain',
   computed: {
+    isReloading() {
+      return this.$store.state['tagsView'].isReloading
+    },
     cachedViews () {
       return this.$store.state.tagsView.cachedViews
     },
